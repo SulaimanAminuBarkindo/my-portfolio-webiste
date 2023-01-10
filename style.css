@@ -25,6 +25,12 @@
     --blue: #57cbff;
 }
 
+
+p {
+    line-height: 25px;
+    color: var(--slate);
+}
+
 .navbar {
     position: relative;
     margin-bottom: 25%;
@@ -181,6 +187,10 @@
 }
 /* end of menu items style */
 
+.introduction {
+    margin-bottom: 200px;
+}
+
 .introduction .name-intro {
     color: var(--green);
 }
@@ -200,8 +210,6 @@
 }
 
 .introduction .summary {
-    color: var(--slate);
-    line-height: 25px;
     margin-bottom: 70px;
 }
 
@@ -212,9 +220,61 @@
 /* end of introduction */
 
 /* start of about section */
-.about {
-    background-color: blue;
+.about .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
 }
+
+.about .title h2 {
+    color: var(--lightest-slate);
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-right: 3%;
+}
+
+.about .title .horizontal-line {
+    border-bottom: 1px solid rgb(35, 53, 84);
+    flex: 1;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 3%;
+}
+
+.skills ul {
+   list-style-type: none;
+   margin-right: 15%;
+}
+
+.skills ul li::before{
+    content: "";
+    border-color: transparent var(--green);
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative;
+}
+.skills ul li{
+    color: var(--slate);
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+
 /* end of about section */
 
 /* 
