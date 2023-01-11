@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 18px;
     background-color: var(--navy);
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -33,7 +33,7 @@ p {
 
 .navbar {
     position: relative;
-    margin-bottom: 25%;
+    margin-bottom: 120px;
     right: 0;
     left: 0;
 }
@@ -47,7 +47,6 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 25px 0 25px 0;
-    box-shadow: 1px 1px 1px 1px var(--light-navy);
 }
 
 /* start of logo style */
@@ -185,12 +184,16 @@ p {
 .main-container {
     padding: 0 7% 0 7%;
 }
-/* end of menu items style */
 
-.introduction {
+.introduction,
+.about,
+.experience,
+.work,
+.contact-me,
+.footer {
     margin-bottom: 200px;
 }
-
+/* end of menu items style */
 .introduction .name-intro {
     color: var(--green);
 }
@@ -249,6 +252,7 @@ p {
     align-items: center;
     justify-content: flex-start;
     padding-left: 3%;
+    margin-bottom: 70px;
 }
 
 .skills ul {
@@ -268,20 +272,58 @@ p {
     top: 0.9em;
     position: relative;
 }
+
 .skills ul li{
     color: var(--slate);
     font-size: 0.8rem;
     font-weight: 100;
 }
 
+.behind-container {
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--green);
+    border-radius: 3px;
+    margin: 0 auto;
+}
 
+
+.profile-pic-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: -20px;
+    left: -20px;
+    bottom: 20px;
+    border-radius: 3px;
+}
+
+.profile-pic-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.profile-pic-container .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    inset: opx;
+    border-radius: 3px;
+    background-color: white;
+    opacity: 0;
+}
 /* end of about section */
 
-/* 
+/* start of exprience */
 .experience {
     background-color: yellow;
 }
+/* end of experience */
 
+/* 
 .work {
     background-color: blueviolet;
 }
