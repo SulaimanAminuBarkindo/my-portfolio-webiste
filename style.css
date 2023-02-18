@@ -223,7 +223,7 @@ p {
 /* end of introduction */
 
 /* start of about section */
-.about .title {
+.sub-title {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -231,14 +231,14 @@ p {
     margin-bottom: 40px;
 }
 
-.about .title h2 {
+h2 {
     color: var(--lightest-slate);
     font-size: 1.7rem;
     font-weight: bold;
     margin-right: 3%;
 }
 
-.about .title .horizontal-line {
+.horizontal-line {
     border-bottom: 1px solid rgb(35, 53, 84);
     flex: 1;
 }
@@ -273,7 +273,8 @@ p {
     position: relative;
 }
 
-.skills ul li{
+.skills ul li,
+.work-place {
     color: var(--slate);
     font-size: 0.8rem;
     font-weight: 100;
@@ -318,8 +319,35 @@ p {
 /* end of about section */
 
 /* start of exprience */
-.experience {
-    background-color: yellow;
+.experience .left-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience .left-side .left-item {
+    display: flex;
+    width: 105px;
+    height: 40px;
+}
+
+.work-place {
+    align-self: center;
+    cursor: pointer;
+    display: inline-block;
+    text-align: justify;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.work-place:hover {
+    background-color: var(--light-navy);
+    color: var(--green);
+}
+
+.experience .left-side .left-item .left-bar {
+    border-left: 2px solid rgb(35, 53, 84);
 }
 /* end of experience */
 
