@@ -10,3 +10,11 @@ function toggleMenu(){
     menuContainer.classList.toggle('open-menu-container')
 }
 
+function showExpText(className) {
+    const sectToShow = document.querySelector(`.${className}`)
+    const openedSect = document.querySelector('.show-experience-text')
+    console.log(sectToShow)
+    openedSect.classList.toggle('show-experience-text')
+    sectToShow.classList.toggle('show-experience-text')
+}
+

@@ -5,7 +5,7 @@
     font-size: 18px;
     background-color: var(--navy);
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: var(--slate);
 }
 
 :root {
@@ -255,12 +255,14 @@ h2 {
     margin-bottom: 70px;
 }
 
-.skills ul {
+.skills ul,
+.experience-content .right-side ul {
    list-style-type: none;
    margin-right: 15%;
 }
 
-.skills ul li::before{
+.skills ul li::before,
+.experience-content .right-side ul li::before{
     content: "";
     border-color: transparent var(--green);
     border-style: solid;
@@ -276,7 +278,7 @@ h2 {
 .skills ul li,
 .work-place {
     color: var(--slate);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 100;
 }
 
@@ -319,9 +321,15 @@ h2 {
 /* end of about section */
 
 /* start of exprience */
+.experience-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .experience .left-side {
     display: flex;
     flex-direction: column;
+    margin-right: 40px;
 }
 
 .experience .left-side .left-item {
@@ -349,13 +357,62 @@ h2 {
 .experience .left-side .left-item .left-bar {
     border-left: 2px solid rgb(35, 53, 84);
 }
-/* end of experience */
 
-/* 
-.work {
-    background-color: blueviolet;
+.experience-content .right-side .title {
+    color: var(--white);
+    font-size: 1.1rem;
 }
 
+.experience-content .right-side .title span {
+    color: var(--green);
+}
+
+.experience-content .right-side .date {
+    font-size: .7rem;
+}
+.experience-content .right-side ul li {
+    font-size: .9rem;
+}
+
+.experience-text {
+    display: none;
+}
+
+.show-experience-text {
+    display: block;
+}
+/* end of experience */
+
+/* start of work */
+.work .work-cart {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 3px;
+}
+.work .work-cart img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.work .work-cart .cart {
+    position: absolute;
+    background-color: rgba(2,12,27,0.7);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 2px 2px 3px rgba(2,12,27,0.7);
+    padding: 25px;
+}
+
+.work .work-cart .cart p {
+    background-color: none;
+}
+/* end of work */
+
+/* 
 .contact-me {
     background-color: brown;
 }
