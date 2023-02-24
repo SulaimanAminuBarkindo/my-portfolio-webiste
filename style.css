@@ -386,6 +386,10 @@ h2 {
 /* end of experience */
 
 /* start of work */
+.work {
+    margin-bottom: 0;
+}
+
 .cart-container {
     display: flex;
     flex-direction: column;
@@ -458,23 +462,54 @@ h2 {
     justify-content: space-between;
     align-items: center;
 }
-.work .work-cart .cart .project-links i {
+.fa {
     font-size: 22px;
     cursor: pointer;
 } 
 
-.work .work-cart .cart .project-links i:hover {
+.fa:hover {
+    color: var(--green);
+}
+/* end of work */
+
+/* start of contact me */
+.contact-me {
+    text-align: center;
+}
+
+ .contact-me h2{
+    margin-bottom: 20px;
+}
+
+.contact-note {
+    margin-bottom: 70px;
+}
+/* end of contact me*/
+
+/* start of footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 15px;
+}
+.footer-links .fa {
+    font-size: 27px;
+}
+.copy-right {
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: .7rem;
+}
+.copy-right:hover {
     color: var(--green);
 }
 
-
-/* end of work */
-
-/* 
-.contact-me {
-    background-color: brown;
-}
-
-.footer {
-    background-color: aquamarine;
-} */
+/* end of footer */
