@@ -97,11 +97,9 @@
                     <li>OOP</li>
                 </ul>
             </div>
-            <div class="behind-container">
-                <div class="profile-pic-container">
-                    <img src="./images/me.avif" alt="sulaiman profile picture" class="profile-picture">
-                    <div class="overlay"></div>
-                </div>
+            <div class="image-container">
+                <div class="image-frame"></div>
+                <img src="./images/me.avif" onmouseleave="moveFrame()" onmouseover="moveFrame()" alt="sulaiman profile picture" class="profile-picture">
             </div>
         </section>
         <section class="experience">
@@ -115,20 +113,22 @@
             <div class="experience-content">
                 <div class="left-side">
                     <div class="left-item" onclick="showExpText('experience-text1')">
-                        <div class="left-bar"></div>
-                        <div class="work-place">
+                        <div class="left-bar">
+                            <div class="left-bar-scroll"></div>
+                        </div>
+                        <div class="work-place1 work-place active-work-place" onclick="makeActive('work-place1')">
                             Upstatement
                         </div>
                     </div>
                     <div class="left-item" onclick="showExpText('experience-text2')">
                         <div class="left-bar"></div>
-                        <div class="work-place">
+                        <div class="work-place2 work-place" onclick="makeActive('work-place2')">
                             Updtatement
                         </div>
                     </div>
                     <div class="left-item" onclick="showExpText('experience-text3')">
                         <div class="left-bar"></div>
-                        <div class="work-place">
+                        <div class="work-place3 work-place" onclick="makeActive('work-place3')" >
                             Scot
                         </div>
                     </div>
