@@ -47,7 +47,7 @@ p {
     left: 0;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0 20px 0;
+    padding: 12px 30px 12px 30px;
     background-color: var(--navy);
     z-index: 99;
 
@@ -55,7 +55,6 @@ p {
 
 /* start of logo style */
 .logo {
-    margin-left: 25px;
     width: 40px;
     height: 45px;
     display: flex;
@@ -88,7 +87,6 @@ p {
 
 /* start of menu icon (harmbugger) style */
 .menu-icon {
-    margin-right: 25px;
     width: 33px;
     height: 33px;
     padding: 5px;
@@ -143,8 +141,7 @@ p {
 
 .hide-menu-container {
     position: absolute;
-    top: -9999px !important;
-    left: -9999px !important;
+    display: none;
 }
 
 .open-menu-container {
@@ -207,17 +204,17 @@ p {
 }
 
 .introduction .title {
-    color: var(--white);
+    color: var(--lightest-slate)
 }
 
 .introduction .sub-title {
-    color: var(--light-slate);
+    color: var(--slate);
 }
 
 .introduction .title, 
 .introduction .sub-title {
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
 }
 
 .introduction .summary {
@@ -226,12 +223,12 @@ p {
 
 .introduction .name-intro,
 .introduction .sub-title {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 /* end of introduction */
 
 /* start of about section */
-.sub-title {
+.about .sub-title {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -531,5 +528,59 @@ h2 {
 .copy-right:hover {
     color: var(--green);
 }
-
 /* end of footer */
+
+/* media queries */
+@media screen and (min-width: 576px) {
+    .navbar {
+        margin-bottom: 140px;
+    }
+
+    .introduction .title, 
+    .introduction .sub-title {
+    font-size: 2.1rem;
+}
+}
+
+@media screen and (min-width: 768px) {
+    .introduction .title, 
+    .introduction .sub-title {
+    font-size: 3rem;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .nav-container {
+        column-gap: 30%;
+        padding: 12px 50px 12px 50px;
+    }
+
+    .menu-container {
+        flex: 1;
+        position: relative;
+        display: block;
+    }
+
+    .menu-container ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 40px;
+    }
+
+    .menu-container ul a li {
+        text-align: center;
+        margin: 0;
+    }
+
+    .resume-link {
+        padding: 12px 17px;
+    }
+
+    .menu-item, 
+    .resume-link { 
+        font-size: 0.8rem;
+    }
+}
